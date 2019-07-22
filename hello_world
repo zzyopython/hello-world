@@ -1,0 +1,19 @@
+
+word = False
+
+if not word:
+    print("可以打印")
+
+firstNum =  input("请设置密码：")
+def lookNum(realNum):
+    for i in range(3):
+        password = input("请输入密码：")
+        if password == realNum:
+            print("输入正确！")
+            return 1
+        else:
+            print("密码输入错误")
+    return 0
+
+myNum = lookNum(firstNum)
+print(myNum)
